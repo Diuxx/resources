@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-label="Go-Archiver logo">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8be9ff"/>
+      <stop offset="100%" stop-color="#c7f3ff"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00ADD8"/>
+      <stop offset="100%" stop-color="#0EA5E9"/>
+    </linearGradient>
+    <style>
+      .title { font: 700 72px 'Segoe UI', Inter, Roboto, Arial, sans-serif; fill: #0B1220; }
+      .title .go { fill: #00ADD8; }
+      .subtitle { font: 500 20px 'Segoe UI', Inter, Roboto, Arial, sans-serif; fill: #4b5563; }
+      @media (prefers-color-scheme: dark) {
+        .title { fill: #E5E7EB; }
+        .subtitle { fill: #A3AAB6; }
+      }
+    </style>
+  </defs>
+
+  <!-- speed lines (Go vibe) -->
+  <g opacity="0.55" stroke="url(#g2)" stroke-linecap="round">
+    <path d="M20 120 H110" stroke-width="10"/>
+    <path d="M20 160 H95" stroke-width="8"/>
+    <path d="M20 200 H120" stroke-width="6"/>
+  </g>
+
+  <!-- archive icon -->
+  <g transform="translate(140,45)">
+    <!-- box -->
+    <rect x="0" y="20" rx="24" ry="24" width="200" height="200" fill="url(#g1)" stroke="url(#g2)" stroke-width="10"/>
+    <!-- lid -->
+    <rect x="0" y="20" rx="24" ry="24" width="200" height="52" fill="#00ADD8" opacity="0.15"/>
+    <!-- zipper track -->
+    <rect x="95" y="70" width="10" height="110" fill="#0EA5E9" opacity="0.25" rx="3"/>
+    <!-- zipper teeth -->
+    <g fill="#00ADD8">
+      <rect x="92" y="74" width="16" height="10" rx="2"/>
+      <rect x="92" y="92" width="16" height="10" rx="2"/>
+      <rect x="92" y="110" width="16" height="10" rx="2"/>
+      <rect x="92" y="128" width="16" height="10" rx="2"/>
+      <rect x="92" y="146" width="16" height="10" rx="2"/>
+      <rect x="92" y="164" width="16" height="10" rx="2"/>
+      <rect x="92" y="182" width="16" height="10" rx="2"/>
+    </g>
+    <!-- zipper pull -->
+    <g fill="none" stroke="url(#g2)" stroke-width="8" stroke-linecap="round">
+      <line x1="100" y1="190" x2="100" y2="208"/>
+      <circle cx="100" cy="218" r="10" fill="none"/>
+    </g>
+  </g>
+
+  <!-- title -->
+  <g transform="translate(390,120)">
+    <text class="title">
+      <tspan class="go">Go</tspan>-Archiver
+    </text>
+    <text y="60" class="subtitle">Fast, portable archiving CLI in Go</text>
+  </g>
+</svg>
